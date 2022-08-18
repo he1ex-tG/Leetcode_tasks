@@ -3,7 +3,7 @@ import kotlin.test.assertEquals
 
 class EasyTest() {
 
-    private val easy: Easy = Easy()
+    private val easy = Easy()
 
     @Test
     fun t387() {
