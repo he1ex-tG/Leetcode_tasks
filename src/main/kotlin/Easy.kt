@@ -34,4 +34,22 @@ class Easy {
             }.joinToString(separator = "")
         }.toSet().size
     }
+
+    class ListNode(val `val`: Int) {
+        var next: ListNode? = null
+    }
+    fun t234(head: ListNode?): Boolean {
+        var p = head
+        val arr = mutableListOf<Int>()
+        while (p != null) {
+            arr.add(p.`val`)
+            p = p.next
+        }
+        for (i in 0 until arr.size / 2) {
+            if (arr[i] != arr[arr.size - 1 - i]) {
+                return false
+            }
+        }
+        return true
+    }
 }

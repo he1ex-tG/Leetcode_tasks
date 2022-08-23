@@ -25,4 +25,13 @@ class EasyTest() {
         val arr2 = easy.t804(arrayOf("a"))
         assertEquals(arr2, 1)
     }
+
+    @Test
+    fun t234() {
+        val head = Easy.ListNode(1)
+        head.next = Easy.ListNode(2)
+
+        val res1 = easy.t234(head)
+        assertEquals(res1, false)
+    }
 }
