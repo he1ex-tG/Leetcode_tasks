@@ -52,4 +52,34 @@ class Easy {
         }
         return true
     }
+
+    class TreeNode(var `val`: Int = 0) {
+        var left: TreeNode? = null
+        var right: TreeNode? = null
+    }
+
+    fun t235(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode? {
+        if (root == null || p == null || q == null) {
+            return null
+        }
+        val highval: Int
+        val lowval: Int
+        if (q.`val` > p.`val`) {
+            lowval = p.`val`
+            highval = q.`val`
+        } else {
+            lowval = q.`val`
+            highval = p.`val`
+        }
+        var pointer = root!!
+        while (pointer.`val` !in lowval..highval) {
+            if (pointer.`val` < lowval) {
+                pointer = pointer.right!!
+            }
+            if (pointer.`val` > highval) {
+                pointer = pointer.left!!
+            }
+        }
+        return pointer
+    }
 }

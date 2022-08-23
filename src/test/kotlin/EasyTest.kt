@@ -1,3 +1,4 @@
+import com.sun.source.tree.Tree
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
@@ -33,5 +34,45 @@ class EasyTest() {
 
         val res1 = easy.t234(head)
         assertEquals(res1, false)
+    }
+
+    @Test
+    fun t235() {
+        val root = Easy.TreeNode(6).apply {
+            left = Easy.TreeNode(2).apply {
+                left = Easy.TreeNode(0)
+                right = Easy.TreeNode(4).apply {
+                    left = Easy.TreeNode(3)
+                    right = Easy.TreeNode(5)
+                }
+            }
+            right = Easy.TreeNode(8).apply {
+                left = Easy.TreeNode(7)
+                right = Easy.TreeNode(9)
+            }
+        }
+        val p1 = root.left
+        val q1 = root.right
+        val res1 = easy.t235(root, p1, q1)
+        assertEquals(res1?.`val`, 6)
+
+        val p2 = root.left?.left
+        val q2 = root.left?.right?.left
+        val res2 = easy.t235(root, p2, q2)
+        assertEquals(res2?.`val`, 2)
+
+        val p3 = root
+        val q3 = root.right?.right
+        val res3 = easy.t235(root, p3, q3)
+        assertEquals(res3?.`val`, 6)
+
+        val root2 = Easy.TreeNode(2).apply {
+            left = Easy.TreeNode(1)
+            right = Easy.TreeNode(3)
+        }
+        val p4 = root2.right
+        val q4 = root2.left
+        val res4 = easy.t235(root2, p4, q4)
+        assertEquals(res4?.`val`, 2)
     }
 }
