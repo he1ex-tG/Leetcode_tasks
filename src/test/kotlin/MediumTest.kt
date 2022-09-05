@@ -13,4 +13,24 @@ class MediumTest {
         val r2 = medium.t1338(intArrayOf(7,7,7,7,7,7))
         assertEquals(r2, 1)
     }
+
+    @Test
+    fun m429() {
+        val inputTree = Medium.Node(1).apply {
+            children = listOf(
+                Medium.Node(3).apply {
+                    children = listOf(
+                        Medium.Node(5),
+                        Medium.Node(6)
+                    )
+                },
+                Medium.Node(2),
+                Medium.Node(4)
+            )
+        }
+
+        val r1 = medium.m429(inputTree)
+
+        assertEquals(r1.size, 3)
+    }
 }

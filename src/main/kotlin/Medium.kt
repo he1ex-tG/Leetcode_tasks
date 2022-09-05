@@ -16,4 +16,29 @@ class Medium {
         }
         return list.size
     }
+
+    class Node(var `val`: Int) {
+        var children: List<Node?> = listOf()
+    }
+    fun m429(root: Node?): List<List<Int>> {
+        fun recurrent(node: Node?, resultList: MutableList<MutableList<Int>>, depth: Int = 0) {
+            if (node == null) {
+                return
+            }
+            if (resultList.size == depth) {
+                resultList.add(mutableListOf())
+            }
+            resultList[depth].add(node.`val`)
+            for (childrenNode in node.children) {
+                recurrent(childrenNode, resultList, depth + 1)
+            }
+        }
+
+        val resultMutableList: MutableList<MutableList<Int>> = mutableListOf()
+        recurrent(root, resultMutableList)
+        val resultList = resultMutableList.map {
+            it.toList()
+        }.toList()
+        return resultList
+    }
 }
