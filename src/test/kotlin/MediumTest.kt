@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertNotNull
+import kotlin.test.assertNull
 
 class MediumTest {
 
@@ -32,5 +34,27 @@ class MediumTest {
         val r1 = medium.m429(inputTree)
 
         assertEquals(r1.size, 3)
+    }
+
+    @Test
+    fun m814() {
+        val inputTree1 = Medium.TreeNode(0)
+
+        val r1 = medium.m814(inputTree1)
+
+        assertEquals(r1, null)
+
+        val inputTree2 = Medium.TreeNode(1).apply {
+            right = Medium.TreeNode(0).apply {
+                left = Medium.TreeNode(0)
+                right = Medium.TreeNode(1)
+            }
+        }
+
+        val r2 = medium.m814(inputTree2)
+
+        assertNotNull(r2?.right)
+        assertNotNull(r2?.right?.right)
+        assertNull(r2?.right?.left)
     }
 }

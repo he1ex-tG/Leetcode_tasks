@@ -41,4 +41,24 @@ class Medium {
         }.toList()
         return resultList
     }
+
+    class TreeNode(var `val`: Int) {
+        var left: TreeNode? = null
+        var right: TreeNode? = null
+    }
+    fun m814(root: TreeNode?): TreeNode? {
+        fun recurrentCheck(node: TreeNode?): TreeNode? {
+            if (node == null) {
+                return null
+            }
+            node.left = recurrentCheck(node.left)
+            node.right = recurrentCheck(node.right)
+            return if (node.left == null && node.right == null && (node.`val` != 1)) {
+                null
+            } else {
+                node
+            }
+        }
+        return recurrentCheck(root)
+    }
 }
