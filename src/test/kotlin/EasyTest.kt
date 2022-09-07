@@ -75,4 +75,29 @@ class EasyTest() {
         val res4 = easy.t235(root2, p4, q4)
         assertEquals(res4?.`val`, 2)
     }
+
+    @Test
+    fun t606() {
+        val root1 = Easy.TreeNode(1).apply {
+            left = Easy.TreeNode(2).apply {
+                left = Easy.TreeNode(4)
+            }
+            right = Easy.TreeNode(3)
+        }
+
+        val res1 = easy.t606(root1)
+
+        assertEquals(res1, "1(2(4))(3)")
+
+        val root2 = Easy.TreeNode(1).apply {
+            left = Easy.TreeNode(2).apply {
+                right = Easy.TreeNode(4)
+            }
+            right = Easy.TreeNode(3)
+        }
+
+        val res2 = easy.t606(root2)
+
+        assertEquals(res2, "1(2()(4))(3)")
+    }
 }

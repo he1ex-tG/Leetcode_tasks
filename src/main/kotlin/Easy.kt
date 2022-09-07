@@ -82,4 +82,23 @@ class Easy {
         }
         return pointer
     }
+
+    fun t606(root: TreeNode?): String {
+        return root?.let {
+            var resultL = ""
+            val l = t606(it.left)
+            if (l.isNotEmpty()) {
+                resultL = "(${l})"
+            }
+            var resultR = ""
+            val r = t606(it.right)
+            if (r.isNotEmpty()) {
+                resultR = "(${r})"
+            }
+            if (resultR.isNotEmpty() && resultL.isEmpty()) {
+                resultL = "(${resultL})"
+            }
+            "${it.`val`}${resultL}${resultR}"
+        } ?: ""
+    }
 }
