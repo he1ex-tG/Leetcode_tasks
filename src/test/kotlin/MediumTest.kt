@@ -57,4 +57,23 @@ class MediumTest {
         assertNotNull(r2?.right?.right)
         assertNull(r2?.right?.left)
     }
+
+    @Test
+    fun t948() {
+        val r1 = medium.t948(intArrayOf(100), 50)
+
+        assertEquals(r1, 0)
+
+        val r2 = medium.t948(intArrayOf(100, 200), 150)
+
+        assertEquals(r2, 1)
+
+        val r3 = medium.t948(intArrayOf(100, 200, 300, 400), 200)
+
+        assertEquals(r3, 2)
+
+        val r4 = medium.t948(intArrayOf(81, 91, 31), 73)
+
+        assertEquals(r4, 1)
+    }
 }

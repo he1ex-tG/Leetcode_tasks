@@ -61,4 +61,33 @@ class Medium {
         }
         return recurrentCheck(root)
     }
+
+    fun t948(tokens: IntArray, power: Int): Int {
+        val sTokens = tokens.sorted()
+        var result = 0
+        var currentPower = power
+        var i = 0
+        var z = tokens.size - 1
+        while (i <= z) {
+            if (currentPower >= sTokens[i]) {
+                currentPower -= sTokens[i]
+                ++result
+                ++i
+            } else {
+                if (result == 0) {
+                    return 0
+                }
+                if (i == z) {
+                    return result
+                }
+                currentPower += sTokens[z]
+                if (currentPower < sTokens[i]) {
+                    return result
+                }
+                --result
+                --z
+            }
+        }
+        return result
+    }
 }
