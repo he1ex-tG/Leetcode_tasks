@@ -76,4 +76,27 @@ class MediumTest {
 
         assertEquals(r4, 1)
     }
+
+    @Test
+    fun t393() {
+        val r1 = medium.t393(intArrayOf(197, 130, 1))
+
+        assertEquals(r1, true)
+
+        val r2 = medium.t393(intArrayOf(235,140,4))
+
+        assertEquals(r2, false)
+
+        val r3 = medium.t393(intArrayOf(255))
+
+        assertEquals(r3, false)
+
+        val r4 = medium.t393(intArrayOf(237))
+
+        assertEquals(r4, false)
+
+        val r5 = medium.t393(intArrayOf(228,189,160,229,165,189,13,10))
+
+        assertEquals(r5, true)
+    }
 }

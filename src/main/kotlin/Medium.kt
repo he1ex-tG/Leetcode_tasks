@@ -90,4 +90,37 @@ class Medium {
         }
         return result
     }
+
+    fun t393(data: IntArray): Boolean {
+        var nNext = 0
+        for (i in data) {
+            val bInt = Integer.toBinaryString(i).padStart(Byte.SIZE_BITS, '0')
+            when (nNext) {
+                0 -> {
+                    for (k in bInt) {
+                        if (k != '0') {
+                            ++nNext
+                        } else {
+                            break
+                        }
+                    }
+                    if (nNext == 1 || nNext > 4) {
+                        return false
+                    }
+                }
+                else -> {
+                    if (bInt[0] != '1' || bInt[1] != '0') {
+                        return false
+                    }
+                }
+            }
+            if (nNext > 0) {
+                --nNext
+            }
+        }
+        if (nNext > 0) {
+            return false
+        }
+        return true
+    }
 }
