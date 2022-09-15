@@ -99,4 +99,21 @@ class MediumTest {
 
         assertEquals(r5, true)
     }
+
+    @Test
+    fun t1457() {
+        val inputTree1 = Medium.TreeNode(2).apply {
+            left = Medium.TreeNode(3).apply {
+                left = Medium.TreeNode(3)
+                right = Medium.TreeNode(1)
+            }
+            right = Medium.TreeNode(1).apply {
+                right = Medium.TreeNode(1)
+            }
+        }
+
+        val r1 = medium.t1457(inputTree1)
+
+        assertEquals(r1, 2)
+    }
 }

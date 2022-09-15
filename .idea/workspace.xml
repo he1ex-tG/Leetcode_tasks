@@ -66,7 +66,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MediumTest.t393">
+  <component name="RunManager" selected="Gradle.MediumTest.t1457">
     <configuration name="EasyTest.t606" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -90,29 +90,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MediumTest.m429" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;MediumTest.m429&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="MediumTest.m814" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -127,6 +104,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;MediumTest.m814&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MediumTest.t1457" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MediumTest.t1457&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MediumTest.t1457" />
         <item itemvalue="Gradle.MediumTest.t393" />
         <item itemvalue="Gradle.MediumTest.t948" />
         <item itemvalue="Gradle.EasyTest.t606" />
         <item itemvalue="Gradle.MediumTest.m814" />
-        <item itemvalue="Gradle.MediumTest.m429" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662970094782</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mt393">
+      <created>1663059189578</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663059189578</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,6 +323,7 @@
     <watches-manager>
       <configuration name="GradleRunConfiguration">
         <watch expression="mapped" />
+        <watch expression="((java.util.ArrayList)((java.util.ArrayList)allPaths).get(0)).get(2)" custom="java.util.ArrayList" />
       </configuration>
     </watches-manager>
   </component>

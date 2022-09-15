@@ -1,3 +1,5 @@
+import java.util.*
+
 
 class Medium {
 
@@ -122,5 +124,29 @@ class Medium {
             return false
         }
         return true
+    }
+
+    fun t1457(root: TreeNode?): Int {
+        var count = 0
+
+        fun preorder(node: TreeNode?, path: Int) {
+            var path = path
+            if (node != null) {
+                // compute occurences of each digit
+                // in the corresponding register
+                path = path xor (1 shl node.`val`)
+                // if it's a leaf check if the path is pseudo-palindromic
+                if (node.left == null && node.right == null) {
+                    // check if at most one digit has an odd frequency
+                    if (path and path - 1 == 0) {
+                        ++count
+                    }
+                }
+                preorder(node.left, path)
+                preorder(node.right, path)
+            }
+        }
+        preorder(root, 0)
+        return count
     }
 }
