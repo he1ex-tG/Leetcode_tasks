@@ -1,6 +1,3 @@
-import java.util.*
-
-
 class Medium {
 
     fun t1338(arr: IntArray): Int {
@@ -148,5 +145,30 @@ class Medium {
         }
         preorder(root, 0)
         return count
+    }
+
+    fun t1770(nums: IntArray, multipliers: IntArray): Int {
+        fun dp(memo: Array<Array<Int?>>, nums: IntArray, multipliers: IntArray, op: Int, left: Int): Int {
+            // For Right Pointer
+            val n = nums.size
+            if (op == multipliers.size) {
+                return 0
+            }
+
+            // If already computed, return
+            if (memo[op][left] != null) {
+                return memo[op][left]!!
+            }
+            val l = nums[left] * multipliers[op] + dp(memo, nums, multipliers, op + 1, left + 1)
+            val r = nums[n - 1 - (op - left)] * multipliers[op] + dp(memo, nums, multipliers, op + 1, left)
+            return Math.max(l, r).also { memo[op][left] = it }
+        }
+        val memo = Array(nums.size + 1) {
+            arrayOfNulls<Int>(
+                multipliers.size + 1
+            )
+        }
+        // Zero operation done in the beginning
+        return dp(memo, nums, multipliers, 0, 0)
     }
 }

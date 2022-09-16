@@ -116,4 +116,15 @@ class MediumTest {
 
         assertEquals(r1, 2)
     }
+
+    @Test
+    fun t1770() {
+        val r1 = medium.t1770(intArrayOf(1,2,3), intArrayOf(3,2,1))
+
+        assertEquals(r1, 14)
+
+        val r2 = medium.t1770(intArrayOf(-5,-3,-3,-2,7,1), intArrayOf(-10,-5,3,4,6))
+
+        assertEquals(r2, 102)
+    }
 }
