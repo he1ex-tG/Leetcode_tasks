@@ -100,4 +100,15 @@ class EasyTest() {
 
         assertEquals(res2, "1(2()(4))(3)")
     }
+
+    @Test
+    fun t976() {
+        val res1 = easy.t976(intArrayOf(2, 1, 2))
+
+        assertEquals(res1, 5)
+
+        val res2 = easy.t976(intArrayOf(1, 2, 1))
+
+        assertEquals(res2, 0)
+    }
 }

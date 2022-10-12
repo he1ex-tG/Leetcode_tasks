@@ -127,4 +127,19 @@ class MediumTest {
 
         assertEquals(r2, 102)
     }
+
+    @Test
+    fun t718() {
+        val r1 = medium.t718(intArrayOf(1,2,3,2,1), intArrayOf(3,2,1,4,7))
+
+        assertEquals(r1, 3)
+
+        val r2 = medium.t718(intArrayOf(0,0,0,0,0), intArrayOf(0,0,0,0,0))
+
+        assertEquals(r2, 5)
+
+        val r3 = medium.t718(intArrayOf(0,0,0,0,0,0,1,0,0,0), intArrayOf(0,0,0,0,0,0,0,1,0,0))
+
+        assertEquals(r3, 9)
+    }
 }

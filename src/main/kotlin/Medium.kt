@@ -171,4 +171,25 @@ class Medium {
         // Zero operation done in the beginning
         return dp(memo, nums, multipliers, 0, 0)
     }
+
+    fun t718(nums1: IntArray, nums2: IntArray): Int {
+        var result = 0
+        var i1 = 0
+        var i2 = 0
+        var plus = 0
+        while (i1 in nums1.indices) {
+            i2 = 0
+            while (i2 in nums2.indices) {
+                if (i1 + plus in nums1.indices && i2 + plus in nums2.indices && nums1[i1 + plus] == nums2[i2 + plus]) {
+                    ++plus
+                } else {
+                    result = Math.max(plus, result)
+                    ++i2
+                    plus = 0
+                }
+            }
+            ++i1
+        }
+        return Math.max(plus, result)
+    }
 }

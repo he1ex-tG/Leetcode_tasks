@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="mt1457">
+    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="mt1770">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Medium.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Medium.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/MediumTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/MediumTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +68,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MediumTest.t1770">
-    <configuration name="EasyTest.t606" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.EasyTest.t976">
+    <configuration name="EasyTest.t976" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -80,7 +82,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;EasyTest.t606&quot;" />
+            <option value="&quot;EasyTest.t976&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -159,7 +161,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MediumTest.t948" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MediumTest.t718" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -172,7 +174,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;MediumTest.t948&quot;" />
+            <option value="&quot;MediumTest.t718&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EasyTest.t976" />
+        <item itemvalue="Gradle.MediumTest.t718" />
         <item itemvalue="Gradle.MediumTest.t1770" />
         <item itemvalue="Gradle.MediumTest.t1457" />
         <item itemvalue="Gradle.MediumTest.t393" />
-        <item itemvalue="Gradle.MediumTest.t948" />
-        <item itemvalue="Gradle.EasyTest.t606" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663228663371</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="mt1770">
+      <created>1663318434543</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663318434543</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,7 +325,8 @@
     <MESSAGE value="mt948" />
     <MESSAGE value="mt393" />
     <MESSAGE value="mt1457" />
-    <option name="LAST_COMMIT_MESSAGE" value="mt1457" />
+    <MESSAGE value="mt1770" />
+    <option name="LAST_COMMIT_MESSAGE" value="mt1770" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -325,6 +335,16 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/Hard.kt</url>
           <line>3</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Medium.kt</url>
+          <line>177</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Easy.kt</url>
+          <line>105</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

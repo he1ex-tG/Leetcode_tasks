@@ -101,4 +101,17 @@ class Easy {
             "${it.`val`}${resultL}${resultR}"
         } ?: ""
     }
+
+    fun t976(nums: IntArray): Int {
+        val arrS = nums.sortedDescending()
+        var resI = 0
+        while (resI + 2 < nums.size) {
+            if (arrS[resI] >= arrS[resI + 1] + arrS[resI + 2]) {
+                ++resI
+            } else {
+                return arrS[resI] + arrS[resI + 1] + arrS[resI + 2]
+            }
+        }
+        return 0
+    }
 }
