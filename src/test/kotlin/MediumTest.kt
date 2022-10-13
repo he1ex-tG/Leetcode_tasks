@@ -142,4 +142,19 @@ class MediumTest {
 
         assertEquals(r3, 9)
     }
+
+    @Test
+    fun t237() {
+        val head = Medium.ListNode(4).apply {
+            next = Medium.ListNode(5).apply {
+                next = Medium.ListNode(1).apply {
+                    next = Medium.ListNode(9)
+                }
+            }
+        }
+
+        val res1 = medium.t237(head.next)
+
+        assertEquals(head.next?.next?.`val`, 9)
+    }
 }

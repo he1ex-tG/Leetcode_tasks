@@ -192,4 +192,23 @@ class Medium {
         }
         return Math.max(plus, result)
     }
+
+    class ListNode(var `val`: Int) {
+        var next: ListNode? = null
+    }
+    fun t237(node: ListNode?) {
+        if (node == null) {
+            return
+        }
+        node.`val` = node.next!!.`val`
+        if (node.next!!.next == null) {
+            node.next = null
+        }
+        t237(node.next)
+    }
+
+    fun t237_2(node: ListNode?) {
+        node!!.`val` = node!!.next!!.`val`
+        node!!.next = node!!.next!!.next
+    }
 }
