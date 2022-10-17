@@ -111,4 +111,15 @@ class EasyTest() {
 
         assertEquals(res2, 0)
     }
+
+    @Test
+    fun t1832() {
+        val res1 = easy.t1832("thequickbrownfoxjumpsoverthelazydog")
+
+        assertEquals(res1, true)
+
+        val res2 = easy.t1832("leetcode")
+
+        assertEquals(res2, false)
+    }
 }

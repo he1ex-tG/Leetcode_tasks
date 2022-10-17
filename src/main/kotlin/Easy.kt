@@ -114,4 +114,8 @@ class Easy {
         }
         return 0
     }
+
+    fun t1832(sentence: String): Boolean {
+        return  sentence.toSet().size == 26
+    }
 }
