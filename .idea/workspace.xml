@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="mt237">
+    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="et1832">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665648971181</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="et1832">
+      <created>1665992157073</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665992157073</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,7 +346,8 @@
     <MESSAGE value="mt1770" />
     <MESSAGE value="et976" />
     <MESSAGE value="mt237" />
-    <option name="LAST_COMMIT_MESSAGE" value="mt237" />
+    <MESSAGE value="et1832" />
+    <option name="LAST_COMMIT_MESSAGE" value="et1832" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -349,11 +356,6 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/Hard.kt</url>
           <line>3</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Easy.kt</url>
-          <line>118</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -116,6 +116,16 @@ class Easy {
     }
 
     fun t1832(sentence: String): Boolean {
-        return  sentence.toSet().size == 26
+        //return  sentence.toSet().size == 26
+        val res = IntArray(26).apply { fill(0) }
+        sentence.forEach {
+            ++res[it.toByte() - 'a'.toByte()]
+        }
+        res.forEach {
+            if (it == 0) {
+                return false
+            }
+        }
+        return true
     }
 }
