@@ -1,5 +1,6 @@
 import com.sun.source.tree.Tree
 import org.junit.jupiter.api.Test
+import kotlin.test.assertContentEquals
 import kotlin.test.assertEquals
 
 class EasyTest() {
@@ -121,5 +122,14 @@ class EasyTest() {
         val res2 = easy.t1832("leetcode")
 
         assertEquals(res2, false)
+    }
+
+    @Test
+    fun t1480() {
+        val res1 = easy.t1480(intArrayOf(1, 2, 3, 4))
+        assertContentEquals(res1, intArrayOf(1, 3, 6, 10))
+
+        val res2 = easy.t1480(intArrayOf(1, 1, 1, 1, 1))
+        assertContentEquals(res2, intArrayOf(1, 2, 3, 4, 5))
     }
 }

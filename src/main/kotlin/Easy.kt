@@ -128,4 +128,12 @@ class Easy {
         }
         return true
     }
+
+    fun t1480(nums: IntArray): IntArray {
+        var z = 0
+        return nums.map {
+            z += it
+            z
+        }.toIntArray()
+    }
 }
