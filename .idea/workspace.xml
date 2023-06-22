@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="et1480">
+    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="et1672">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" afterDir="false" />
@@ -66,7 +66,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.EasyTest.t1672">
+  <component name="RunManager" selected="Gradle.EasyTest.t412">
     <configuration name="EasyTest.t1480" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -136,7 +136,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EasyTest.t976" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EasyTest.t412" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -149,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;EasyTest.t976&quot;" />
+            <option value="&quot;EasyTest.t412&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EasyTest.t412" />
         <item itemvalue="Gradle.EasyTest.t1672" />
         <item itemvalue="Gradle.EasyTest.t1480" />
         <item itemvalue="Gradle.EasyTest.t1832" />
         <item itemvalue="Gradle.MediumTest.t237" />
-        <item itemvalue="Gradle.EasyTest.t976" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687036974843</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="et1672">
+      <created>1687420596754</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1687420596754</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,7 +371,8 @@
     <MESSAGE value="et1832" />
     <MESSAGE value="et1832.variant2" />
     <MESSAGE value="et1480" />
-    <option name="LAST_COMMIT_MESSAGE" value="et1480" />
+    <MESSAGE value="et1672" />
+    <option name="LAST_COMMIT_MESSAGE" value="et1672" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -373,6 +381,11 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/Hard.kt</url>
           <line>3</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Easy.kt</url>
+          <line>147</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

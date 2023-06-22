@@ -143,4 +143,22 @@ class Easy {
             max(acc, ints.sum())
         }
     }
+
+    fun t412(n: Int): List<String> {
+        val res = mutableListOf<String>()
+        for (i in 1..n) {
+            var tmpStr = ""
+            if (i % 3 == 0) {
+                tmpStr = "Fizz"
+            }
+            if (i % 5 == 0) {
+                tmpStr += "Buzz"
+            }
+            if (tmpStr.isEmpty()) {
+                tmpStr = i.toString()
+            }
+            res.add(tmpStr)
+        }
+        return res
+    }
 }
