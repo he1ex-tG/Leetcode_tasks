@@ -132,4 +132,13 @@ class EasyTest() {
         val res2 = easy.t1480(intArrayOf(1, 1, 1, 1, 1))
         assertContentEquals(res2, intArrayOf(1, 2, 3, 4, 5))
     }
+
+    @Test
+    fun t1672() {
+        val res1 = easy.t1672(arrayOf(intArrayOf(1, 2, 3), intArrayOf(3, 2, 1)))
+        assertEquals(res1, 6)
+
+        val res2 = easy.t1672(arrayOf(intArrayOf(1, 5), intArrayOf(7, 3),  intArrayOf(3, 5)))
+        assertEquals(res2, 10)
+    }
 }

@@ -1,3 +1,4 @@
+import kotlin.math.max
 
 class Easy {
 
@@ -135,5 +136,11 @@ class Easy {
             z += it
             z
         }.toIntArray()
+    }
+
+    fun t1672(accounts: Array<IntArray>): Int {
+        return accounts.fold(0) { acc, ints ->
+            max(acc, ints.sum())
+        }
     }
 }
