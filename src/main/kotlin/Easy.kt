@@ -161,4 +161,17 @@ class Easy {
         }
         return res
     }
+
+    fun t1342(num: Int): Int {
+        var reducedNum = num
+        var steps = 0
+        while (reducedNum != 0) {
+            when (reducedNum % 2) {
+                0 -> reducedNum /= 2
+                else -> reducedNum -= 1
+            }
+            ++steps
+        }
+        return steps
+    }
 }

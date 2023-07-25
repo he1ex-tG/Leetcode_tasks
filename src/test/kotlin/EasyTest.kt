@@ -150,4 +150,13 @@ class EasyTest() {
         val res2 = easy.t412(5)
         assertContentEquals(res2, listOf("1", "2", "Fizz", "4", "Buzz"))
     }
+
+    @Test
+    fun t1342() {
+        val res1 = easy.t1342(14)
+        assertEquals(res1, 6)
+
+        val res2 = easy.t1342(8)
+        assertEquals(res2, 4)
+    }
 }
