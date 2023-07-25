@@ -188,4 +188,13 @@ class EasyTest() {
         val res2 = easy.t876(eNode2)
         assertEquals(res2?.`val`, 4)
     }
+
+    @Test
+    fun t383() {
+        val res1 = easy.t383("aaa", "aab")
+        assertEquals(res1, false)
+
+        val res2 = easy.t383("aaa", "abababaab")
+        assertEquals(res2, true)
+    }
 }

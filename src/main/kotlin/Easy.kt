@@ -189,4 +189,20 @@ class Easy {
         }
         return currentNode
     }
+
+    fun t383(ransomNote: String, magazine: String): Boolean {
+        val hashM = magazine.fold(hashMapOf<Char, Int>()) { acc, c ->
+            acc.apply {
+                put(c, getOrDefault(c, 0) + 1)
+            }
+        }
+        ransomNote.forEach {
+            if (hashM.getOrDefault(it, 0) > 0) {
+                hashM[it] = hashM[it]!! - 1
+            } else {
+                return false
+            }
+        }
+        return true
+    }
 }
