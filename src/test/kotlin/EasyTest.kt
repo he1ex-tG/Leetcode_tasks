@@ -159,4 +159,33 @@ class EasyTest() {
         val res2 = easy.t1342(8)
         assertEquals(res2, 4)
     }
+
+    @Test
+    fun t876() {
+        val eNode1 = Easy.ListNode(1).apply {
+            next = Easy.ListNode(2).apply {
+                next = Easy.ListNode(3).apply {
+                    next = Easy.ListNode(4).apply {
+                        next = Easy.ListNode(5)
+                    }
+                }
+            }
+        }
+        val res1 = easy.t876(eNode1)
+        assertEquals(res1?.`val`, 3)
+
+        val eNode2 = Easy.ListNode(1).apply {
+            next = Easy.ListNode(2).apply {
+                next = Easy.ListNode(3).apply {
+                    next = Easy.ListNode(4).apply {
+                        next = Easy.ListNode(5).apply {
+                            next = Easy.ListNode(6)
+                        }
+                    }
+                }
+            }
+        }
+        val res2 = easy.t876(eNode2)
+        assertEquals(res2?.`val`, 4)
+    }
 }

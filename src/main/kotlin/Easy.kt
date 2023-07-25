@@ -174,4 +174,19 @@ class Easy {
         }
         return steps
     }
+
+    fun t876(head: ListNode?): ListNode? {
+        var currentNode = head
+        var listLength = 0
+        while (currentNode != null) {
+            currentNode = currentNode.next
+            ++listLength
+        }
+        var middleNode = listLength / 2 + 1
+        currentNode = head
+        while (--middleNode != 0) {
+            currentNode = currentNode?.next
+        }
+        return currentNode
+    }
 }
