@@ -205,4 +205,29 @@ class Easy {
         }
         return true
     }
+
+    fun t88(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
+        var pSize = m + n
+        var pm = m - 1
+        var pn = n - 1
+        while (--pSize >= 0) {
+            if (pm >= 0) {
+                if (pn >= 0) {
+                    if (nums1[pm] > nums2[pn]) {
+                        nums1[pSize] = nums1[pm]
+                        --pm
+                    } else {
+                        nums1[pSize] = nums2[pn]
+                        --pn
+                    }
+                } else {
+                    nums1[pSize] = nums1[pm]
+                    --pm
+                }
+            } else {
+                nums1[pSize] = nums2[pn]
+                --pn
+            }
+        }
+    }
 }

@@ -197,4 +197,13 @@ class EasyTest() {
         val res2 = easy.t383("aaa", "abababaab")
         assertEquals(res2, true)
     }
+
+    @Test
+    fun t88() {
+        val res1 = easy.t88(intArrayOf(1,2,3,0,0,0), 3, intArrayOf(2,5,6), 3)
+        assertEquals(res1, Unit)
+
+        val res2 = easy.t88(intArrayOf(1), 1, intArrayOf(), 0)
+        assertEquals(res2, Unit)
+    }
 }
