@@ -230,4 +230,29 @@ class Easy {
             }
         }
     }
+
+    fun t27(nums: IntArray, `val`: Int): Int {
+        var currentPos = 0
+        var currentPointer = 0
+        while (currentPointer < nums.size) {
+            nums[currentPos] = nums[currentPointer]
+            if (nums[currentPos] != `val`) {
+                ++currentPos
+            }
+            ++currentPointer
+        }
+        return currentPos
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
