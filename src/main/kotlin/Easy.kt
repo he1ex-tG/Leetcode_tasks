@@ -243,6 +243,17 @@ class Easy {
         }
         return currentPos
     }
+
+    fun t26(nums: IntArray): Int {
+        var index = 0
+        for (i in 1 until nums.size) {
+            if (nums[index] != nums[i]) {
+                index++
+                nums[index] = nums[i]
+            }
+        }
+        return index + 1
+    }
 }
 
 

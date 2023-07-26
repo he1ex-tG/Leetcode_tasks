@@ -212,4 +212,10 @@ class EasyTest() {
         val res1 = easy.t27(intArrayOf(0,1,2,2,3,0,4,2), 2)
         assertEquals(res1, 5)
     }
+
+    @Test
+    fun t26() {
+        val res1 = easy.t26(intArrayOf(1,1,2))
+        assertEquals(res1, 2)
+    }
 }

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="et88">
+    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="et27">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +65,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.EasyTest.t27">
-    <configuration name="EasyTest.t1342" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.EasyTest.t26">
+    <configuration name="EasyTest.t26" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -80,7 +79,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;EasyTest.t1342&quot;" />
+            <option value="&quot;EasyTest.t26&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EasyTest.t26" />
         <item itemvalue="Gradle.EasyTest.t27" />
         <item itemvalue="Gradle.EasyTest.t88" />
         <item itemvalue="Gradle.EasyTest.t383" />
         <item itemvalue="Gradle.EasyTest.t876" />
-        <item itemvalue="Gradle.EasyTest.t1342" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690368815886</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="et27">
+      <created>1690371320141</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690371320141</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -412,7 +418,8 @@
     <MESSAGE value="et876" />
     <MESSAGE value="et383" />
     <MESSAGE value="et88" />
-    <option name="LAST_COMMIT_MESSAGE" value="et88" />
+    <MESSAGE value="et27" />
+    <option name="LAST_COMMIT_MESSAGE" value="et27" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
