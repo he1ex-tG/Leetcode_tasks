@@ -230,4 +230,27 @@ class Medium {
         }
         return index + 1
     }
+
+    fun t189(nums: IntArray, k: Int): Unit {
+        val newK = k % nums.size
+        val tmpMass = IntArray(nums.size)
+        for (i in nums.indices) {
+            val newIndex = if (i + newK > nums.lastIndex) {
+                i + newK - nums.lastIndex - 1
+            } else {
+                i + newK
+            }
+            tmpMass[newIndex] = nums[i]
+        }
+        for (i in nums.indices) {
+            nums[i] = tmpMass[i]
+        }
+    }
 }
+
+
+
+
+
+
+

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="mt80">
+    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="et169">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Easy.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Medium.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Medium.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/EasyTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/MediumTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/MediumTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +66,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.EasyTest.t169">
+  <component name="RunManager" selected="Gradle.MediumTest.t189">
     <configuration name="EasyTest.t169" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,7 +136,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EasyTest.t88" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MediumTest.t189" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -151,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;EasyTest.t88&quot;" />
+            <option value="&quot;MediumTest.t189&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MediumTest.t189" />
         <item itemvalue="Gradle.EasyTest.t169" />
         <item itemvalue="Gradle.MediumTest.t80" />
         <item itemvalue="Gradle.EasyTest.t26" />
         <item itemvalue="Gradle.EasyTest.t27" />
-        <item itemvalue="Gradle.EasyTest.t88" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +376,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690373123251</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="mt80">
+      <created>1690450327549</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1690450327549</updated>
+    </task>
+    <task id="LOCAL-00027" summary="et169">
+      <created>1690450356663</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1690450356663</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,7 +417,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="t387, t804" />
     <MESSAGE value="mt1338" />
     <MESSAGE value="ht871" />
     <MESSAGE value="et234" />
@@ -430,7 +441,8 @@
     <MESSAGE value="et88" />
     <MESSAGE value="et27" />
     <MESSAGE value="mt80" />
-    <option name="LAST_COMMIT_MESSAGE" value="mt80" />
+    <MESSAGE value="et169" />
+    <option name="LAST_COMMIT_MESSAGE" value="et169" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
