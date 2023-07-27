@@ -254,6 +254,21 @@ class Easy {
         }
         return index + 1
     }
+
+    fun t169(nums: IntArray): Int {
+        val hMap = nums.fold(hashMapOf<Int, Int>()) { acc, i ->
+            acc.apply {
+                put(i, getOrDefault(i, 0) + 1)
+            }
+        }
+        var result = 0
+        for (i in hMap.keys) {
+            if (hMap.getOrDefault(result, 0) < hMap[i]!!) {
+                result = i
+            }
+        }
+        return result
+    }
 }
 
 
