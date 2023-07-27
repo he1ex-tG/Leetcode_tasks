@@ -211,4 +211,23 @@ class Medium {
         node!!.`val` = node!!.next!!.`val`
         node!!.next = node!!.next!!.next
     }
+
+    fun t80(nums: IntArray): Int {
+        var index = 0
+        var repeatCount = true
+        for (i in 1 until nums.size) {
+            if (nums[index] == nums[i]) {
+                if (repeatCount) {
+                    ++index
+                    nums[index] = nums[i]
+                }
+                repeatCount = false
+            } else {
+                ++index
+                nums[index] = nums[i]
+                repeatCount = true
+            }
+        }
+        return index + 1
+    }
 }

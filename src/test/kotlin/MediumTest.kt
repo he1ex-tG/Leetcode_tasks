@@ -157,4 +157,10 @@ class MediumTest {
 
         assertEquals(head.next?.next?.`val`, 9)
     }
+
+    @Test
+    fun t80() {
+        val res1 = medium.t80(intArrayOf(0,0,1,1,1,1,2,3,3))
+        assertEquals(res1, 7)
+    }
 }
