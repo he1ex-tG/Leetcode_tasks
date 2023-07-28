@@ -269,6 +269,20 @@ class Easy {
         }
         return result
     }
+
+    fun t121(prices: IntArray): Int {
+        var minIndex = 0
+        var maxDiff = 0
+        for (maxIndex in 1..prices.lastIndex) {
+            if (prices[maxIndex] - prices[minIndex] > maxDiff) {
+                maxDiff = prices[maxIndex] - prices[minIndex]
+            }
+            if (prices[maxIndex] < prices[minIndex]) {
+                minIndex = maxIndex
+            }
+        }
+        return maxDiff
+    }
 }
 
 
