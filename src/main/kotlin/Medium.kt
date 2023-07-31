@@ -246,6 +246,23 @@ class Medium {
             nums[i] = tmpMass[i]
         }
     }
+
+    fun t55(nums: IntArray): Boolean {
+        var maxDistance = nums[0]
+        var position = maxDistance
+        while (position >= 0) {
+            if (maxDistance >= nums.lastIndex) {
+                return true
+            }
+            if (position + nums[position] <= maxDistance) {
+                --position
+            } else {
+                maxDistance = position + nums[position]
+                position = maxDistance
+            }
+        }
+        return false
+    }
 }
 
 
