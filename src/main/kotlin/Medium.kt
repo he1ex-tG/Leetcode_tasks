@@ -263,6 +263,27 @@ class Medium {
         }
         return false
     }
+
+    fun t45(nums: IntArray): Int {
+        var startPos = 0
+        var endPos = nums[startPos]
+        var result = 0
+        if (startPos == nums.lastIndex) {
+            return result
+        }
+        while (endPos < nums.lastIndex) {
+            var maxAdds = 0
+            for (i in startPos..endPos) {
+                if (maxAdds < i + nums[i] - endPos) {
+                    maxAdds = i + nums[i] - endPos
+                }
+            }
+            startPos = endPos + 1
+            endPos += maxAdds
+            ++result
+        }
+        return ++result
+    }
 }
 
 

@@ -181,4 +181,13 @@ class MediumTest {
         val res2 = medium.t55(intArrayOf(3,2,1,0,4))
         assertEquals(res2, false)
     }
+
+    @Test
+    fun t45() {
+        val res1 = medium.t45(intArrayOf(2,3,1,1,4))
+        assertEquals(res1, 2)
+
+        val res2 = medium.t45(intArrayOf(2,3,0,1,4))
+        assertEquals(res2, 2)
+    }
 }
