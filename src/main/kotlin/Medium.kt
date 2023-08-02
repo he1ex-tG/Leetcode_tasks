@@ -344,6 +344,23 @@ class Medium {
         }
         return nums
     }
+
+    fun t238_2(nums: IntArray): IntArray {
+        val res = IntArray(nums.size) {
+            1
+        }
+        var tmp = 1
+        for (i in nums.indices) {
+            res[i] *= tmp
+            tmp *= nums[i]
+        }
+        tmp = 1
+        for (i in nums.lastIndex downTo 0) {
+            res[i] *= tmp
+            tmp *= nums[i]
+        }
+        return res
+    }
 }
 
 

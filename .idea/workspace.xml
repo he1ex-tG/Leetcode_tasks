@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="mt380">
+    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="mt238">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Medium.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Medium.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/MediumTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/MediumTest.kt" afterDir="false" />
@@ -66,30 +66,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MediumTest.t238">
-    <configuration name="MediumTest.t122" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;MediumTest.t122&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.MediumTest.t238_2">
     <configuration name="MediumTest.t238" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,6 +81,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;MediumTest.t238&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MediumTest.t238_2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MediumTest.t238_2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MediumTest.t238_2" />
         <item itemvalue="Gradle.MediumTest.t238" />
         <item itemvalue="Gradle.MediumTest.t274" />
         <item itemvalue="Gradle.MediumTest.t45" />
         <item itemvalue="Gradle.MediumTest.t55" />
-        <item itemvalue="Gradle.MediumTest.t122" />
       </list>
     </recent_temporary>
   </component>
@@ -425,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690968929308</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="mt238">
+      <created>1690980486642</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1690980486642</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mt814" />
     <MESSAGE value="et606" />
     <MESSAGE value="mt948" />
     <MESSAGE value="mt393" />
@@ -477,7 +483,8 @@
     <MESSAGE value="mt55" />
     <MESSAGE value="mt45" />
     <MESSAGE value="mt380" />
-    <option name="LAST_COMMIT_MESSAGE" value="mt380" />
+    <MESSAGE value="mt238" />
+    <option name="LAST_COMMIT_MESSAGE" value="mt238" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -486,11 +493,6 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/Hard.kt</url>
           <line>3</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Medium.kt</url>
-          <line>322</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
