@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="mt55">
+    <list default="true" id="4ad78fe0-2edb-44f5-b01b-eddf08ac8ea5" name="Changes" comment="mt45">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Medium.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Medium.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/MediumTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/MediumTest.kt" afterDir="false" />
@@ -66,7 +66,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MediumTest.t45">
+  <component name="RunManager" selected="Gradle.MediumTest.t274">
     <configuration name="EasyTest.t121" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -113,7 +113,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MediumTest.t189" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MediumTest.t274" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -126,7 +126,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;MediumTest.t189&quot;" />
+            <option value="&quot;MediumTest.t274&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MediumTest.t274" />
         <item itemvalue="Gradle.MediumTest.t45" />
         <item itemvalue="Gradle.MediumTest.t55" />
         <item itemvalue="Gradle.MediumTest.t122" />
         <item itemvalue="Gradle.EasyTest.t121" />
-        <item itemvalue="Gradle.MediumTest.t189" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690810008311</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="mt45">
+      <created>1690873181197</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1690873181197</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +445,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="et235" />
     <MESSAGE value="mt429" />
     <MESSAGE value="mt814" />
     <MESSAGE value="et606" />
@@ -463,7 +469,8 @@
     <MESSAGE value="mt189" />
     <MESSAGE value="et121" />
     <MESSAGE value="mt55" />
-    <option name="LAST_COMMIT_MESSAGE" value="mt55" />
+    <MESSAGE value="mt45" />
+    <option name="LAST_COMMIT_MESSAGE" value="mt45" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

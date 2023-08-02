@@ -284,6 +284,32 @@ class Medium {
         }
         return ++result
     }
+
+    // Not work
+    fun t274(citations: IntArray): Int {
+        val sortedCitations = citations.sorted()
+        return sortedCitations[sortedCitations.lastIndex / 2]
+    }
+
+    fun t380() {
+        class RandomizedSet() {
+
+            private val _hSet = hashSetOf<Int>()
+
+            fun insert(`val`: Int): Boolean {
+                return _hSet.add(`val`)
+            }
+
+            fun remove(`val`: Int): Boolean {
+                return _hSet.remove(`val`)
+            }
+
+            fun getRandom(): Int {
+                return _hSet.random()
+            }
+
+        }
+    }
 }
 
 
