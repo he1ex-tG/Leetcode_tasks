@@ -1,3 +1,5 @@
+import kotlin.math.pow
+
 class Medium {
 
     fun t1338(arr: IntArray): Int {
@@ -309,6 +311,38 @@ class Medium {
             }
 
         }
+    }
+
+    fun t238(nums: IntArray): IntArray {
+        val hMap = nums.fold(hashMapOf<Int, Int>()) { acc, i ->
+            acc[i] = acc.getOrDefault(i, 0) + 1
+            acc
+        }
+        val countedHashMap = hashMapOf<Int, Int>()
+        for (i in hMap.keys) {
+            var tmpRes = 1
+            for (k in hMap.keys) {
+                var times = if (i == k) {
+                    hMap[k]!! - 1
+                } else {
+                    hMap[k]!!
+                }
+                var power = k
+                if (times > 0) {
+                    while (--times > 0) {
+                        power *= k
+                    }
+                } else {
+                    power = 1
+                }
+                tmpRes *= power
+            }
+            countedHashMap[i] = tmpRes
+        }
+        for (i in nums.indices) {
+            nums[i] = countedHashMap[nums[i]]!!
+        }
+        return nums
     }
 }
 

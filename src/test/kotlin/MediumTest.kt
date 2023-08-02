@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test
+import kotlin.test.assertContentEquals
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
@@ -198,5 +199,17 @@ class MediumTest {
 
         val res2 = medium.t274(intArrayOf(1,3,1))
         assertEquals(res2, 1)
+    }
+
+    @Test
+    fun t238() {
+        val res1 = medium.t238(intArrayOf(1,2,3,4))
+        assertContentEquals(res1, intArrayOf(24,12,8,6))
+
+        val res2 = medium.t238(intArrayOf(-1,1,0,-3,3))
+        assertContentEquals(res2, intArrayOf(0,0,9,0,0))
+
+        val res3 = medium.t238(intArrayOf(5,9,2,-9,-9,-7,-8,7,-9,10))
+        assertContentEquals(res3, intArrayOf(-51438240,-28576800,-128595600,28576800,28576800,36741600,32148900,-36741600,28576800,-25719120))
     }
 }
